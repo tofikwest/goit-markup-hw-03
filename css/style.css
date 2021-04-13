@@ -1,0 +1,245 @@
+:root {
+  --all-titles-color: #212121;
+  --navigation-text-color: #212121;
+  --contact-us-font: #757575;
+  --primary-text-color: #212121;
+  --main-title-text-color: #ffffff;
+  --main-title-backround: #2f303a;
+  --accent-color: #2196f3;
+  --background-buttons: #F5F4FA;
+  --preference-table-color: #757575;
+  --team-background-color: #f5f4fa;
+  --team-table-color: #757575;
+  --footer-background-color: #2f303a;
+  --footer-logo-color: #f5f4fa;
+  --footer-our-address-color: #ffffff;
+  --buttons-text-color: #212121;
+  --portfolio-table-color: #757575;
+  --portfolio-button-active: #FFFFFF;
+}
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+/* __________________________________________________ */
+/* Шапка */
+.logo {
+  text-decoration: none;
+  color: var(--navigation-text-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19em;
+}
+.part-logo {
+  color: var(--accent-color);
+}
+.site-nav {
+  color: var(--navigation-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+
+.contact-us .email {
+  color: var(--contact-us-font);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+.contact-us .email:hover {
+  color: var(--accent-color);
+}
+.contact-us .email:focus {
+  color: var(--accent-color);
+}
+.contact-us .number {
+  color: var(--contact-us-font);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+}
+.contact-us .number:hover,
+.number:focus {
+  color: #2196f3;
+}
+.site-nav .link {
+  color: var(--navigation-text-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .studio.current {
+  color: var(--accent-color);
+}
+.site-nav .portfolio.current {
+  color: var(--accent-color);
+}
+
+/* ____________________________________________________________ */
+/* Основной блок */
+.main .main-title {
+  background-color: var(--main-title-backround);
+  color: var(--main-title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.main .main-button {
+  background: var(--accent-color);
+  color: var(--main-title-text-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87em;
+  margin-left: 650px;
+  cursor: pointer;
+}
+/* _____________________________________________________________________________ */
+/* Преимущества */
+.preference .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.preference .table-of-contents {
+  color: var(--preference-table-color);
+  font-size: 14px;
+  line-height: 1.71em;
+}
+/* _______________________________________________________________________ */
+/* Чем мы занимаемся */
+.projects .all-title {
+  color: var(--all-titles-color);
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.16em;
+  letter-spacing: 0.03em;
+}
+.projects .photo-box {
+  padding-bottom: 30px;
+}
+/* __________________________________________________________________________ */
+/* Команда */
+.team {
+  background-color: var(--team-background-color);
+}
+.team .photo-box {
+  padding-bottom: 30px;
+}
+.team .all-title {
+  color: var(--all-titles-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  
+}
+.team .table {
+  color: var(--team-table-color);
+  font-size: 16px;
+  line-height: 1.18em;
+  letter-spacing: 0.03em;
+}
+.team .worker-name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+}
+/* ________________________________________________________________________
+Подвал */
+.down-part {
+  background: var(--footer-background-color);
+}
+.down-part .logo-position {
+  margin-left: 215px;
+}
+.down-part .logo {
+  color: var(--footer-logo-color);
+}
+.down-part .our-address {
+  color: var(--footer-our-address-color);
+  font-size: 14px;
+  line-height: 1.71em;
+  margin-left: 215px;
+  font-style: normal;
+}
+.down-part .email-footer {
+  color: var(--contact-us-font);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.71em;
+  margin-left: 175px;
+}
+.down-part .number-footer {
+  color: var(--contact-us-font);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.02em;
+  margin-left: 175px;
+}
+/* Страница Портфолио */
+.portfolio-main-title {
+  text-align: center;
+}
+.buttons .button-all,
+.button-sites, .button-apps,
+.button-disagn, .button-marketing {
+  color: var(--buttons-text-color);
+  background-color: var(--background-buttons);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.buttons .button-all:hover,
+.buttons .button-sites:hover,
+.buttons .button-apps:hover,
+.buttons .button-disagn:hover,
+.buttons .button-marketing:hover,
+.buttons :focus {
+  color: var(--portfolio-button-active);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.portfolio-names {
+  color: var(--all-titles-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+.portolio-tables {
+  color: var(--portfolio-table-color);
+  font-size: 16px;
+  line-height: 1.87em;
+  letter-spacing: 0.03em;
+}
