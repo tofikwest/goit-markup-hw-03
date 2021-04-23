@@ -6,7 +6,7 @@
   --main-title-text-color: #ffffff;
   --main-title-backround: #2f303a;
   --accent-color: #2196f3;
-  --background-buttons: #F5F4FA;
+  --background-buttons: #f5f4fa;
   --preference-table-color: #757575;
   --team-background-color: #f5f4fa;
   --team-table-color: #757575;
@@ -15,21 +15,41 @@
   --footer-our-address-color: #ffffff;
   --buttons-text-color: #212121;
   --portfolio-table-color: #757575;
-  --portfolio-button-active: #FFFFFF;
+  --portfolio-button-active: #ffffff;
 }
 body {
   color: var(--primary-text-color);
-  font-family: "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans",
-  "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
 }
-
+.container {
+  width: 1185px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.title,
+.all-title,
+p {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
 }
 /* __________________________________________________ */
 /* Шапка */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  display: flex;
   text-decoration: none;
   color: var(--navigation-text-color);
   font-family: Raleway;
@@ -41,13 +61,33 @@ body {
   color: var(--accent-color);
 }
 .site-nav {
+  display: flex;
+  margin-left: 93px;
+
   color: var(--navigation-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
-
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+.contact-us {
+  display: flex;
+  margin-left: auto;
+}
+.contact-us .item:not(:last-child) {
+  margin-right: 50px;
+}
 .contact-us .email {
   color: var(--contact-us-font);
   text-decoration: none;
@@ -91,28 +131,58 @@ body {
 
 /* ____________________________________________________________ */
 /* Основной блок */
-.main .main-title {
+.main {
+  text-align: center;
   background-color: var(--main-title-backround);
+  padding-bottom: 280px;
+  margin: 0 auto;
+}
+.main-title {
+  padding: 0px;
+  margin-bottom: 30px;
   color: var(--main-title-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 .main .main-button {
+  display: inline-block;
   background: var(--accent-color);
   color: var(--main-title-text-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87em;
-  margin-left: 650px;
+  padding: 10px 32px 10px 32px;
   cursor: pointer;
+  min-width: 200px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
 }
+.main .main-button:hover,
+.main-button:focus {
+  background: #188ce8;
+}
+
 /* _____________________________________________________________________________ */
 /* Преимущества */
+.preference {
+  margin-top: 94px;
+}
+.main-preference {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-preference .item:not(:last-child) {
+  margin-right: 30px;
+}
 .preference .title {
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14em;
@@ -126,7 +196,17 @@ body {
 }
 /* _______________________________________________________________________ */
 /* Чем мы занимаемся */
+.main-projects {
+  display: flex;
+  justify-content: space-around;
+}
+.main-projects .item {
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
 .projects .all-title {
+  margin-top: 94px;
   color: var(--all-titles-color);
   font-weight: bold;
   font-size: 36px;
@@ -139,6 +219,13 @@ body {
 }
 /* __________________________________________________________________________ */
 /* Команда */
+.main-team {
+  display: flex;
+  justify-content: center;
+}
+.main-team .item:not(:last-child) {
+  margin-right: 30px;
+}
 .team {
   background-color: var(--team-background-color);
 }
@@ -153,13 +240,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 94px;
-  
+  margin-bottom: 50px;
 }
 .team .table {
   color: var(--team-table-color);
   font-size: 16px;
   line-height: 1.18em;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 .team .worker-name {
   font-family: Roboto;
@@ -172,9 +260,6 @@ body {
 .down-part {
   background: var(--footer-background-color);
 }
-.down-part .logo-position {
-  margin-left: 215px;
-}
 .down-part .logo {
   color: var(--footer-logo-color);
 }
@@ -182,7 +267,7 @@ body {
   color: var(--footer-our-address-color);
   font-size: 14px;
   line-height: 1.71em;
-  margin-left: 215px;
+  /* margin-left: 215px; */
   font-style: normal;
 }
 .down-part .email-footer {
@@ -192,7 +277,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   line-height: 1.71em;
-  margin-left: 175px;
+  /* margin-left: 175px; */
 }
 .down-part .number-footer {
   color: var(--contact-us-font);
@@ -201,15 +286,17 @@ body {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.02em;
-  margin-left: 175px;
+  /* margin-left: 175px; */
 }
 /* Страница Портфолио */
 .portfolio-main-title {
   text-align: center;
 }
 .buttons .button-all,
-.button-sites, .button-apps,
-.button-disagn, .button-marketing {
+.button-sites,
+.button-apps,
+.button-disagn,
+.button-marketing {
   color: var(--buttons-text-color);
   background-color: var(--background-buttons);
   text-align: center;
