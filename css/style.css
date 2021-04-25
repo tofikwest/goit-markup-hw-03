@@ -311,10 +311,38 @@ img {
 .buttons .button-apps:hover,
 .buttons .button-disagn:hover,
 .buttons .button-marketing:hover,
-.buttons :focus {
+.buttons .button-all:focus,
+.buttons .button-sites:focus,
+.buttons .button-apps:focus,
+.buttons .button-disagn:focus,
+.buttons .button-marketing:focus {
   color: var(--portfolio-button-active);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+.buttons .button-disagn {
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+}
+.portfolio-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.portfolio-line > .item {
+  flex-basis: calc(100% / 3 - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .portfolio-names {
