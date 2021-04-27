@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- ШАПКА -->
-    <header>
+    <header class="outline">
       <!-- НАВИГАЦИЯ -->
       <div class="container main-nav">
         <nav class="main-nav">
@@ -55,7 +55,7 @@
     </header>
     <main>
       <!-- ПОРТФОЛИО -->
-      <section>
+      <section class="portfolio-page section-pos">
         <!-- КНОПКИ -->
         <div class="container">
           <h1 class="portfolio-main-title">Портфолио</h1>
@@ -93,34 +93,42 @@
 
           <!-- НАШИ ПРОЭКТЫ -->
           <ul class="list card-set">
-            <li class="item card-disagn">
+            <li class="item">
               <img
                 src="./images/firstproject.jpeg"
                 alt="Технокряк"
                 width="370"
               />
-              <h2 class="portfolio-names">Технокряк</h2>
-              <p class="portolio-tables">Веб-сайт</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Технокряк</h2>
+                <p class="portolio-tables">Веб-сайт</p>
+              </div>
             </li>
 
-            <li class="item card-disagn">
+            <li class="item">
               <img
                 src="./images/secondproject.jpeg"
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
               />
-              <h2 class="portfolio-names">Постер New Orlean vs Golden Star</h2>
-              <p class="portolio-tables">Дизайн</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portolio-tables">Дизайн</p>
+              </div>
             </li>
 
-            <li class="item card-disagn">
+            <li class="item">
               <img
                 src="./images/thirdproject.jpeg"
                 alt="Ресторан Seafood"
                 width="370"
               />
-              <h2 class="portfolio-names">Ресторан Seafood</h2>
-              <p class="portolio-tables">Приложение</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Ресторан Seafood</h2>
+                <p class="portolio-tables">Приложение</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -129,8 +137,10 @@
                 alt="Проект Prime"
                 width="370"
               />
-              <h2 class="portfolio-names">Проект Prime</h2>
-              <p class="portolio-tables">Маркетинг</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Проект Prime</h2>
+                <p class="portolio-tables">Маркетинг</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -139,8 +149,10 @@
                 alt="Проект Boxes"
                 width="370"
               />
-              <h2 class="portfolio-names">Проект Boxes</h2>
-              <p class="portolio-tables">Приложение</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Проект Boxes</h2>
+                <p class="portolio-tables">Приложение</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -149,8 +161,10 @@
                 alt="Inspiration has no Borders"
                 width="370"
               />
-              <h2 class="portfolio-names">Inspiration has no Borders</h2>
-              <p class="portolio-tables">Веб-сайт</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Inspiration has no Borders</h2>
+                <p class="portolio-tables">Веб-сайт</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -159,8 +173,10 @@
                 alt="Издание Limited Edition"
                 width="370"
               />
-              <h2 class="portfolio-names">Издание Limited Edition</h2>
-              <p class="portolio-tables">Дизайн</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Издание Limited Edition</h2>
+                <p class="portolio-tables">Дизайн</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -169,8 +185,10 @@
                 alt="Проект LAB"
                 width="370"
               />
-              <h2 class="portfolio-names">Проект LAB</h2>
-              <p class="portolio-tables">Маркетинг</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Проект LAB</h2>
+                <p class="portolio-tables">Маркетинг</p>
+              </div>
             </li>
 
             <li class="item card-disagn">
@@ -179,8 +197,10 @@
                 alt="Growing Business"
                 width="370"
               />
-              <h2 class="portfolio-names">Growing Business</h2>
-              <p class="portolio-tables">Приложение</p>
+              <div class="project-card-disagn">
+                <h2 class="portfolio-names">Growing Business</h2>
+                <p class="portolio-tables">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -188,21 +208,25 @@
     </main>
 
     <!-- ПОДВАЛ -->
-    <footer class="down-part">
+    <footer class="down-part section-pos">
       <div class="container">
         <a class="logo logo-position" href="/index.html"
           ><span class="part-logo">Web</span>Studio</a
         >
-        <address class="our-address">г. Киев, пр-т Леси Украинки, 26</address>
+        <address class="our-address pos-table-footer">
+          г. Киев, пр-т Леси Украинки, 26
+        </address>
         <ul class="list">
-          <li>
-            <a class="email-footer" href="info@example.com">
+          <li class="pos-table-footer">
+            <a class="email-footer" href="mailto:info@example.com">
               info@example.com
             </a>
           </li>
 
-          <li>
-            <a class="number-footer" href=""> +38 099 111 11 11 </a>
+          <li class="pos-table-footer num-li-footer">
+            <a class="number-footer" href="tel:+380991111111">
+              +38 099 111 11 11
+            </a>
           </li>
         </ul>
       </div>
