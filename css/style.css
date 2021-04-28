@@ -59,7 +59,10 @@ img {
   height: auto;
 }
 /* Отспуты секций */
-
+.section-pos.main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .section-pos.preference {
   padding-top: 94px;
 }
@@ -195,7 +198,7 @@ img {
 /* Основной блок */
 
 .main {
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +209,7 @@ img {
   text-align: center;
 }
 .main-title {
-  padding: 0px;
+  /* padding-top: 200px; */
   margin-bottom: 30px;
   margin-top: 0px;
 
